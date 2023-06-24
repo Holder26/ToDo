@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  background: linear-gradient(10deg, rgba(195,169,195,1) 0%, rgba(204,138,226,1) 44%, rgba(221,183,226,1) 100%);
+}
+
+.img1{
+  position: absolute;
+  bottom: 5;
+  left: 0;
+   z-index: -5;
+   width: 150px;
+  height: 150px;
+  rotate: -8deg;
+  
+}
+.img1 img{
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+ 
+  
+}
+
+.todoBox{
+    border: 3px solid;
+    width: 45%;
+    min-height: 500px;
+    max-height: 700px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20 0;
+    border-radius: 20px;
+    background-color: #60ca97;
+    background-image: 
+    linear-gradient(transparent 23px,
+      rgba(220,220,200,.8) 24px,
+      transparent 24px),
+    linear-gradient(90deg,
+      transparent 23px,
+      rgba(220,220,200,.8) 24px,
+      transparent 24px);
+    background-size: 100% 24px, 24px 100%;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Annie Use Your Telescope';
+    font-size: 50px;
+    background-color: rgb(195, 96, 197);
+    width: 60%;
+    position: absolute;
+    top: -50;
+    left: 20%;
+    margin: 10 auto 0 auto;
+    border-radius: 10px;
+    border: 3px solid;
+
+}
+
+
+
+
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo-container {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 35;
+  color: rgb(5, 3, 5);
+  margin-top: 20;
+}
+
+.todo-item {
+  background-color: #fff;
+}
+
+.todo {
+
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50;
+  transition: 0.2s;
+  padding: 16;
+  
+  
+  /*border-radius: 10px;*/
+  
+  font-family: Schoolbell;
+  font-size: 20px;
+  height: 30;
+  
+}
+.todo li {
+  flex: 1;
+  font-size: 26;
+  background-color: rgba(120, 12, 86, 0);
+  border-radius: 7px;
+  color: rgb(54, 11, 46);
+  
+}
+
+.todo-button{
+    font-size: 37;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    left: 90%;
+    top: 6%;
+    background-color: rgb(227, 133, 228);
+    
+}
+
+.complete-btn, .trash-btn{
+    height: 100%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 10;
+    
+    
+}
+.trash-btn{
+    border-radius: 5px;
+    background-color: rgb(227, 133, 228);
+    
+    
+}
+.complete-btn{
+  background: transparent;
+  border: none;
+  font-size: 20;
+  color: rgb(10, 74, 14);
+  margin-right: 10;
+}
+.trash-btn:hover{
+  scale: 1.2;
+  rotate: 45deg;
+  transition: 0.2s;
+  background-color: #60ca97;
+}
+.complete-btn:hover{
+  scale: 1.7;
+  transition: 0.2s;
+}
+
+
+.fall {
+  transform: translate(-70%);
+  rotate: -45deg;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+  
+}
+
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  filter: contrast(0.5);
+  
+  
+}
+
+select {
+  border: 3px solid black;
+  appearance: none;
+  padding: 10;
+  cursor: pointer;
+  height: 40;
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+  width: 40px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgb(227, 133, 228);
+
+}
+.select {
+  
+  position: absolute;
+  right: 90%;
+  top: 30px;
+  background: white;
+  opacity: 1;
+  
+}
+
+
+
+.add{
+  position: absolute;
+  bottom: 20px;
+  font-size: 30;
+  left: 49%;
+  background-color: rgb(227, 133, 228);
+  border-radius: 5px;
+  padding: 5;
+  border: 2px solid;
+  cursor: pointer;
+}
+.add:hover{
+  scale: 1.2;
+  transition: 0.2s;
+}
+
+/*
+.formAdd{
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100px;
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+}
+*/
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form input{
+  
+  height: 50;
+  width: 350px;
+  border-radius: 10px;
+  border: 3px solid;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.filters{
+  font-size: 35;
+  padding:2;
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    right: 90%;
+    top: 6%;
+    background-color: rgb(227, 133, 228);
+}
+
+
+.flex {
+  display: flex;
+}
+.none {
+  display: none;
+}
+
+
+
+/*****MEDIA************************/
+
+@media screen and (max-width: 1100px){
+    .todoBox{
+      width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .todoBox{
+      width: 96%;
+    }
+    h1{
+      font-size: 35px;
+    }
+    form input{
+      width: 80%;
+}
+  
+    .todo-button{
+      font-size: 35;
+      margin-left: 2px;
+    }
+    .img1{
+      opacity: 0.7;
+      width: 100;
+      height: 100;
+    }
